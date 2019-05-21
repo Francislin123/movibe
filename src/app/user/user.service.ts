@@ -13,7 +13,7 @@ export class UserService {
 
     constructor(private http: HttpClient) { }
 
-    private userUrl = '/api';
+    private userUrl = 'http://localhost:8087/movibe-api/v1/user';
 
     public getUsers() {
         return this.http.get<User[]>(this.userUrl);
