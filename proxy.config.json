@@ -1,0 +1,6 @@
+{
+  "/api/*": {
+    "target": "http://localhost:8087/movibe-api/v1/user/",
+    "secure": false
+  }
+}
