@@ -11,7 +11,7 @@ const httpOptions = {
 @Injectable()
 export class UserService {
 
-    constructor(private http: HttpClient) { }
+    constructor(private http: HttpClient) {}
 
     private userUrl = 'http://localhost:8087/movibe-api/v1/user';
 

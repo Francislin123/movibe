@@ -13,9 +13,7 @@ export class UserComponent implements OnInit {
 
     users: User[] = [];
 
-    constructor(private router: Router, private userService: UserService) {
-
-    }
+    constructor(private router: Router, private userService: UserService) { }
 
     ngOnInit() {
         this.userService.getUsers().subscribe((data) => { this.users = data; console.log(this.users) });
