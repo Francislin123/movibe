@@ -8,19 +8,19 @@ import { UserComponent } from './user/user.component';
 import { AppRoutingModule } from './app-routing.module';
 import {UserService} from './user/user.service';
 import {HttpClientModule} from "@angular/common/http";
-import { AppUserComponent } from './app-user/app-user.component';
+import { ErrorsModule } from './errors/errors.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent,
-    AppUserComponent
+    UserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ErrorsModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

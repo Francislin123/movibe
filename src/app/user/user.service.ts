@@ -8,14 +8,14 @@ const httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class UserService {
 
-    constructor(private http: HttpClient) {}
+    constructor(private http: HttpClient) { }
 
-    private userUrl = 'http://localhost:8087/movibe-api/v1/user';
+    private api = 'http://localhost:8087/movibe-api/v1/user';
 
     public getUsers() {
-        return this.http.get<User[]>(this.userUrl);
+        return this.http.get<User[]>(this.api);
     }
 }

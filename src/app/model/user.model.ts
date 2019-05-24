@@ -5,4 +5,5 @@ export class User {
     birthday: string;
     local: string;
     telephone: string;
+    dateCreation: string;
 }
